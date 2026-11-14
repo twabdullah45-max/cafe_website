@@ -4,7 +4,7 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const PORT = 5000; // Port 5000 use kar rahe hain taake router ka masla na ho
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
